@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <defs>
+    <linearGradient id="bg-rain-trek" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="40%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#14532d" />
+    </linearGradient>
+    <linearGradient id="peacock-fan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="400" rx="24" fill="url(#bg-rain-trek)" />
+
+  <!-- Rolling Misty Mountains -->
+  <path d="M0,230 Q120,130 240,210 T480,160 L500,200 L500,400 L0,400 Z" fill="#064e3b" opacity="0.7" />
+  <path d="M0,260 Q150,180 300,240 T500,220 L500,400 L0,400 Z" fill="#022c22" />
+
+  <!-- Rain Strands Falling -->
+  <g stroke="#93c5fd" stroke-width="1.8" opacity="0.55" stroke-linecap="round">
+    <line x1="60" y1="50" x2="40" y2="110" />
+    <line x1="120" y1="80" x2="100" y2="140" />
+    <line x1="200" y1="40" x2="180" y2="100" />
+    <line x1="320" y1="70" x2="300" y2="130" />
+    <line x1="420" y1="50" x2="400" y2="110" />
+    <line x1="160" y1="130" x2="140" y2="190" />
+    <line x1="370" y1="120" x2="350" y2="180" />
+  </g>
+
+  <!-- Mysore Express Hot Mutton Biriyani Pot on Left -->
+  <g transform="translate(80, 195)">
+    <ellipse cx="40" cy="65" rx="35" ry="14" fill="#d97706" stroke="#92400e" stroke-width="2" />
+    <path d="M5,65 Q40,95 75,65" fill="#b45309" />
+    <!-- Steam -->
+    <path d="M25,48 Q30,30 25,18" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.8" stroke-linecap="round" />
+    <path d="M40,45 Q45,26 40,12" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.8" stroke-linecap="round" />
+    <path d="M55,48 Q60,30 55,18" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.8" stroke-linecap="round" />
+    <!-- Badge -->
+    <rect x="0" y="75" width="80" height="20" rx="10" fill="#991b1b" />
+    <text x="40" y="89" font-family="'Segoe UI', sans-serif" font-size="9" fill="#fef08a" font-weight="bold" text-anchor="middle">MYSORE EXP</text>
+  </g>
+
+  <!-- Elegant Wild Peacock on Right -->
+  <g transform="translate(320, 170)">
+    <!-- Fan of Feathers -->
+    <path d="M50,70 Q10,20 40,-10 Q80,10 65,70" fill="url(#peacock-fan)" opacity="0.9" />
+    <path d="M55,70 Q70,-20 100,-15 Q105,25 65,70" fill="url(#peacock-fan)" opacity="0.85" />
+    <circle cx="45" cy="5" r="7" fill="#fbbf24" />
+    <circle cx="45" cy="5" r="4" fill="#0284c7" />
+    <circle cx="85" cy="0" r="7" fill="#fbbf24" />
+    <circle cx="85" cy="0" r="4" fill="#0284c7" />
+    <!-- Peacock Body -->
+    <path d="M55,75 Q50,45 65,35 Q75,45 68,75 Z" fill="#1d4ed8" />
+    <!-- Head & Crest -->
+    <circle cx="68" cy="30" r="8" fill="#1e40af" />
+    <line x1="68" y1="22" x2="68" y2="14" stroke="#fbbf24" stroke-width="2" />
+    <circle cx="68" cy="13" r="2.5" fill="#06b6d4" />
+    <!-- Beak -->
+    <path d="M74,30 L82,32 L74,34 Z" fill="#f97316" />
+  </g>
+
+  <!-- Title & Text -->
+  <text x="250" y="340" font-family="'Segoe UI', sans-serif" font-size="21" fill="#ffffff" font-weight="bold" text-anchor="middle">Rainy Trek &amp; Peacocks &bull; Mysore Express &#x1F99A;&#x1F327;&#xFE0F;</text>
+  <text x="250" y="370" font-family="'Segoe UI', sans-serif" font-size="13" fill="#6ee7b7" text-anchor="middle">Mutton Biriyani Feast, Unprepared In The Pouring Rain &amp; Wild Peacocks</text>
+</svg>

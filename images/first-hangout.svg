@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg-map" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="40%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#4c1d95" />
+    </linearGradient>
+    <linearGradient id="gold-frame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="50%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="coke-red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+  <rect width="600" height="600" rx="28" fill="url(#bg-map)" />
+  <circle cx="500" cy="120" r="180" fill="#ec4899" opacity="0.15" />
+  <circle cx="100" cy="480" r="140" fill="#38bdf8" opacity="0.12" />
+
+  <!-- Museum Classical / Modern Gallery Arch & Frame -->
+  <rect x="70" y="60" width="460" height="330" rx="16" fill="rgba(255,255,255,0.06)" stroke="url(#gold-frame)" stroke-width="3" filter="url(#shadow)" />
+  
+  <!-- Museum Gallery Wall with Painting and Statuesque Modern Art -->
+  <line x1="70" y1="340" x2="530" y2="340" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
+  
+  <!-- Museum Pillars & Architecture -->
+  <path d="M120,340 L120,120 M140,340 L140,120" stroke="rgba(255,255,255,0.25)" stroke-width="2" />
+  <path d="M460,340 L460,120 M480,340 L480,120" stroke="rgba(255,255,255,0.25)" stroke-width="2" />
+
+  <!-- Art Canvas inside Museum -->
+  <rect x="180" y="100" width="240" height="150" rx="8" fill="#1e1b4b" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+  <!-- Abstract Art on Wall -->
+  <circle cx="300" cy="165" r="45" fill="#f43f5e" opacity="0.7" />
+  <polygon points="260,190 300,125 340,190" fill="#38bdf8" opacity="0.75" />
+  <path d="M250,175 Q300,110 350,175" stroke="#fde047" stroke-width="3" fill="none" />
+
+  <!-- Diet Coke Can -->
+  <g transform="translate(240, 245)">
+    <rect x="0" y="10" width="38" height="65" rx="6" fill="url(#coke-red)" stroke="#ffffff" stroke-width="1.5" />
+    <rect x="4" y="5" width="30" height="7" rx="3" fill="#e5e7eb" />
+    <rect x="0" y="32" width="38" height="16" fill="#ffffff" opacity="0.9" />
+    <text x="19" y="44" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="900" fill="#b91c1c" text-anchor="middle">DIET</text>
+  </g>
+
+  <!-- KJ Drink / Coffee Cup -->
+  <g transform="translate(320, 240)">
+    <path d="M0,15 L6,70 C6,76 36,76 36,70 L42,15 Z" fill="#ffffff" stroke="rgba(255,255,255,0.8)" stroke-width="2" />
+    <rect x="-2" y="10" width="46" height="8" rx="4" fill="#a855f7" />
+    <!-- Straw -->
+    <line x1="28" y1="0" x2="22" y2="25" stroke="#f43f5e" stroke-width="3" stroke-linecap="round" />
+    <!-- Heart sticker on cup -->
+    <path d="M21,46 C18,42 12,43 12,48 C12,53 21,58 21,58 C21,58 30,53 30,48 C30,43 24,42 21,46 Z" fill="#ec4899" />
+    <text x="21" y="36" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#6b21a8" text-anchor="middle">KJ</text>
+  </g>
+
+  <!-- Sweet Sparkles and Hearts -->
+  <path d="M300,225 C292,210 274,213 274,226 C274,240 300,252 300,252 C300,252 326,240 326,226 C326,213 308,210 300,225 Z" fill="#f43f5e" filter="url(#shadow)" />
+
+  <!-- Typography & Badges -->
+  <rect x="150" y="415" width="300" height="34" rx="17" fill="rgba(244, 114, 182, 0.2)" stroke="#f472b6" stroke-width="1.5" />
+  <text x="300" y="437" font-family="'Segoe UI', sans-serif" font-size="14" fill="#fbcfe8" font-weight="600" text-anchor="middle">&#x2728; FIRST MEETUP &bull; MAP MUSEUM &#x2728;</text>
+
+  <text x="300" y="485" font-family="'Segoe UI', sans-serif" font-size="28" fill="#ffffff" font-weight="bold" text-anchor="middle">MAP &bull; Art &amp; Photography</text>
+  <text x="300" y="520" font-family="'Segoe UI', sans-serif" font-size="16" fill="rgba(255,255,255,0.85)" text-anchor="middle">Diet Coke, KJ &amp; The Smile That Started Everything</text>
+  <text x="300" y="555" font-family="'Segoe UI', sans-serif" font-size="13" fill="#cbd5e1" font-style="italic" text-anchor="middle">"Surrounded by masterpieces, yet you were the only view."</text>
+</svg>

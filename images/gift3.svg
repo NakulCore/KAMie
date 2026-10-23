@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <defs>
+    <linearGradient id="bg-hotwheels" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b91c1c" />
+      <stop offset="50%" stop-color="#c2410c" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="car-body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="flame" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="400" rx="24" fill="url(#bg-hotwheels)" />
+
+  <!-- Speed Motion Lines -->
+  <line x1="50" y1="120" x2="180" y2="120" stroke="#fef08a" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+  <line x1="80" y1="140" x2="220" y2="140" stroke="#fef08a" stroke-width="4" stroke-linecap="round" opacity="0.9" />
+  <line x1="40" y1="230" x2="150" y2="230" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.7" />
+
+  <!-- Hot Wheels Styled Flame Trail -->
+  <path d="M120,200 Q180,180 240,195 Q200,165 280,185" fill="none" stroke="url(#flame)" stroke-width="8" stroke-linecap="round" />
+
+  <!-- Hot Wheels Sports Car -->
+  <g transform="translate(160, 130)">
+    <!-- Main Chassis -->
+    <path d="M10,65 Q30,40 70,38 L120,38 Q155,20 185,38 L230,55 Q245,60 240,75 L10,75 Z" fill="url(#car-body)" />
+    <!-- Cabin Glass / Windshield -->
+    <path d="M75,38 L115,38 L145,28 L110,28 Z" fill="#93c5fd" opacity="0.9" />
+    <path d="M118,38 L160,38 L150,28 L120,28 Z" fill="#bae6fd" opacity="0.9" />
+    <!-- Racing Stripe & Flame Decal -->
+    <path d="M30,60 L210,50 L200,55 L20,65 Z" fill="#facc15" />
+    <!-- Rear Spoiler -->
+    <path d="M5,45 L25,45 L20,55 L10,55 Z" fill="#1e3a8a" />
+    <!-- Wheels -->
+    <circle cx="65" cy="75" r="18" fill="#18181b" stroke="#71717a" stroke-width="4" />
+    <circle cx="65" cy="75" r="8" fill="#e2e8f0" />
+    <circle cx="195" cy="75" r="18" fill="#18181b" stroke="#71717a" stroke-width="4" />
+    <circle cx="195" cy="75" r="8" fill="#e2e8f0" />
+  </g>
+
+  <!-- Heart badge -->
+  <path d="M250,90 C242,75 224,78 224,91 C224,105 250,117 250,117 C250,117 276,105 276,91 C276,78 258,75 250,90 Z" fill="#ffffff" />
+
+  <!-- Title & Text -->
+  <text x="250" y="340" font-family="'Segoe UI', sans-serif" font-size="22" fill="#ffffff" font-weight="bold" text-anchor="middle">The Hot Wheels Surprise &#x1F3CE;&#xFE0F;&#x2764;&#xFE0F;</text>
+  <text x="250" y="370" font-family="'Segoe UI', sans-serif" font-size="14" fill="#fef08a" text-anchor="middle">Astonished, Overjoyed &amp; Genuinely Loved &bull; Inner Child Rejoicing</text>
+</svg>

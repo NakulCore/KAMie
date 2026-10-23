@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <defs>
+    <linearGradient id="bg-football" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532d" />
+      <stop offset="50%" stop-color="#15803d" />
+      <stop offset="100%" stop-color="#166534" />
+    </linearGradient>
+    <radialGradient id="floodlight" cx="50%" cy="10%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#14532d" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="500" height="400" rx="24" fill="url(#bg-football)" />
+  <rect width="500" height="400" fill="url(#floodlight)" />
+
+  <!-- Pitch White Lines -->
+  <circle cx="250" cy="200" r="75" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3" />
+  <line x1="50" y1="200" x2="450" y2="200" stroke="rgba(255,255,255,0.4)" stroke-width="3" />
+  <circle cx="250" cy="200" r="6" fill="rgba(255,255,255,0.6)" />
+
+  <!-- Classic Football -->
+  <g transform="translate(190, 115)">
+    <circle cx="45" cy="45" r="40" fill="#ffffff" stroke="#18181b" stroke-width="2.5" />
+    <!-- Pentagons -->
+    <polygon points="45,30 32,38 36,52 54,52 58,38" fill="#18181b" />
+    <polygon points="45,15 38,5 52,5" fill="#18181b" />
+    <polygon points="18,35 7,32 10,45" fill="#18181b" />
+    <polygon points="72,35 83,32 80,45" fill="#18181b" />
+    <polygon points="25,65 20,78 32,78" fill="#18181b" />
+    <polygon points="65,65 70,78 58,78" fill="#18181b" />
+  </g>
+
+  <!-- Cheering Megaphone / Heart on Sidelines -->
+  <g transform="translate(300, 110)">
+    <path d="M10,25 L35,10 L35,40 Z" fill="#f43f5e" />
+    <ellipse cx="35" cy="25" rx="5" ry="15" fill="#fb7185" />
+    <rect x="0" y="20" width="10" height="10" rx="3" fill="#ffffff" />
+    <!-- Sound Waves of Love -->
+    <path d="M48,15 Q55,25 48,35" stroke="#fde047" stroke-width="3" fill="none" stroke-linecap="round" />
+    <path d="M56,8 Q68,25 56,42" stroke="#fde047" stroke-width="3" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- Floating Heart for Her Presence -->
+  <path d="M165,115 C158,102 142,105 142,116 C142,128 165,138 165,138 C165,138 188,128 188,116 C188,105 172,102 165,115 Z" fill="#f43f5e" />
+
+  <!-- Title & Text -->
+  <text x="250" y="340" font-family="'Segoe UI', sans-serif" font-size="22" fill="#ffffff" font-weight="bold" text-anchor="middle">Showing Up For My Football Matches &#x26BD;&#x1F496;</text>
+  <text x="250" y="370" font-family="'Segoe UI', sans-serif" font-size="14" fill="#bbf7d0" text-anchor="middle">My Favorite Sideline Supporter &bull; Deeply Grateful For Your Presence</text>
+</svg>

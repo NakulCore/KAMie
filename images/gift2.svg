@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <defs>
+    <linearGradient id="bg-batman" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b" />
+      <stop offset="50%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#27272a" />
+    </linearGradient>
+    <linearGradient id="sketch-canvas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdfbf7" />
+      <stop offset="100%" stop-color="#f4eedb" />
+    </linearGradient>
+    <filter id="canvas-shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+  <rect width="500" height="400" rx="24" fill="url(#bg-batman)" />
+
+  <!-- Ambient Yellow Bat-Signal Glow in Background -->
+  <circle cx="250" cy="160" r="105" fill="#eab308" opacity="0.18" />
+
+  <!-- Artist's Sketch Pad / Paper -->
+  <rect x="140" y="55" width="220" height="235" rx="8" fill="url(#sketch-canvas)" filter="url(#canvas-shadow)" />
+  <!-- Sketchbook Spiral Rings -->
+  <g fill="#71717a">
+    <circle cx="170" cy="62" r="3" /><circle cx="210" cy="62" r="3" /><circle cx="250" cy="62" r="3" /><circle cx="290" cy="62" r="3" /><circle cx="330" cy="62" r="3" />
+  </g>
+
+  <!-- Hand-drawn Batman Emblem / Cowl Silhouette -->
+  <g transform="translate(180, 95)">
+    <!-- Iconic Batman Logo Path -->
+    <path d="M70,25 L78,5 L88,18 C100,10 115,10 135,18 L140,25 C132,45 110,65 70,85 C30,65 8,45 0,25 L5,18 C25,10 40,10 52,18 L62,5 Z" fill="#09090b" />
+    
+    <!-- Pencil Sketch shading lines -->
+    <path d="M20,35 L40,50 M30,30 L55,45 M85,45 L110,30 M100,50 L120,35" stroke="#3f3f46" stroke-width="1.5" stroke-linecap="round" />
+    <!-- Heart next to sketch -->
+    <path d="M70,95 C65,88 54,90 54,97 C54,105 70,113 70,113 C70,113 86,105 86,97 C86,90 75,88 70,95 Z" fill="#e11d48" />
+  </g>
+
+  <!-- Pencil lying on paper -->
+  <g transform="translate(325, 200) rotate(35)">
+    <rect x="0" y="0" width="70" height="7" fill="#fbbf24" stroke="#d97706" stroke-width="1" />
+    <polygon points="70,0 80,3.5 70,7" fill="#fde68a" />
+    <polygon points="77,2.5 80,3.5 77,4.5" fill="#18181b" />
+  </g>
+
+  <!-- Handwritten Birthday Note on sketchpad -->
+  <text x="250" y="245" font-family="'Caveat', cursive, sans-serif" font-size="16" fill="#18181b" font-weight="bold" text-anchor="middle">For your birthday &bull; 31st March 2026 &#x2764;&#xFE0F;</text>
+
+  <!-- Title & Text -->
+  <text x="250" y="340" font-family="'Segoe UI', sans-serif" font-size="22" fill="#ffffff" font-weight="bold" text-anchor="middle">The Batman Sketch &bull; 31st March 2026 &#x1F987;&#x1F5A4;</text>
+  <text x="250" y="370" font-family="'Segoe UI', sans-serif" font-size="14" fill="#facc15" text-anchor="middle">Birthday Gift Deeply Close To My Heart &bull; Pure Thoughtfulness</text>
+</svg>

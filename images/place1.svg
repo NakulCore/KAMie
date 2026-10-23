@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <linearGradient id="bg-dbc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#321307" />
+      <stop offset="50%" stop-color="#58250b" />
+      <stop offset="100%" stop-color="#853b0f" />
+    </linearGradient>
+    <linearGradient id="fudge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f0a02" />
+      <stop offset="100%" stop-color="#120601" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="500" rx="24" fill="url(#bg-dbc)" />
+  <circle cx="200" cy="220" r="160" fill="url(#glow)" />
+  
+  <!-- Glass Dessert Bowl -->
+  <path d="M120,240 Q200,330 280,240 L270,220 L130,220 Z" fill="rgba(255,255,255,0.25)" stroke="rgba(255,255,255,0.75)" stroke-width="2.5" />
+  <!-- Bowl Stem & Base -->
+  <path d="M195,295 L195,335 L165,346 L235,346 L205,335 L205,295" fill="rgba(255,255,255,0.35)" stroke="rgba(255,255,255,0.65)" stroke-width="2" />
+  
+  <!-- Warm Brownie Base Layer -->
+  <rect x="140" y="215" width="120" height="28" rx="6" fill="#271106" />
+  
+  <!-- Ice Cream Scoops -->
+  <circle cx="170" cy="190" r="34" fill="#fef3c7" />
+  <circle cx="230" cy="190" r="34" fill="#fffbeb" />
+  <circle cx="200" cy="160" r="36" fill="#fef08a" />
+  
+  <!-- Molten Hot Chocolate Fudge Drizzle -->
+  <path d="M175,150 Q190,185 190,220 Q205,175 215,215 Q225,165 240,205" stroke="url(#fudge)" stroke-width="12" fill="none" stroke-linecap="round" />
+  
+  <!-- Cherry on Top -->
+  <circle cx="200" cy="122" r="14" fill="#dc2626" />
+  <path d="M204,112 Q218,92 232,102" stroke="#16a34a" stroke-width="3" fill="none" stroke-linecap="round" />
+  
+  <!-- Two Spoons for Sharing -->
+  <path d="M105,170 L160,225" stroke="#e2e8f0" stroke-width="4.5" stroke-linecap="round" />
+  <ellipse cx="100" cy="165" rx="10" ry="14" transform="rotate(-35 100 165)" fill="#e2e8f0" />
+  <path d="M295,170 L240,225" stroke="#e2e8f0" stroke-width="4.5" stroke-linecap="round" />
+  <ellipse cx="300" cy="165" rx="10" ry="14" transform="rotate(35 300 165)" fill="#e2e8f0" />
+  
+  <!-- Card Text Overlay -->
+  <text x="200" y="395" font-family="'Cinzel', 'Playfair Display', serif" font-size="20" fill="#ffffff" font-weight="bold" text-anchor="middle" letter-spacing="1">Corner House DBC</text>
+  <text x="200" y="425" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#fbcfe8" font-weight="600" text-anchor="middle">Hangout #2 &bull; Hot Fudge &amp; Two Spoons</text>
+  <text x="200" y="450" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#fde68a" text-anchor="middle">Endless laughs over death by chocolate &#x2728;</text>
+</svg>

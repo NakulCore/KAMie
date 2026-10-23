@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <defs>
+    <linearGradient id="bg-lily" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#831843" />
+      <stop offset="50%" stop-color="#be185d" />
+      <stop offset="100%" stop-color="#db2777" />
+    </linearGradient>
+    <linearGradient id="petal-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="70%" stop-color="#fdf2f8" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="400" rx="24" fill="url(#bg-lily)" />
+  <circle cx="250" cy="170" r="120" fill="rgba(255,255,255,0.1)" />
+
+  <!-- Stems -->
+  <path d="M250,290 Q240,220 220,160" stroke="#15803d" stroke-width="6" fill="none" stroke-linecap="round" />
+  <path d="M250,290 Q265,230 280,170" stroke="#16a34a" stroke-width="5" fill="none" stroke-linecap="round" />
+  <!-- Leaves -->
+  <path d="M242,240 Q210,240 195,225 Q220,220 242,240" fill="#22c55e" />
+  <path d="M255,225 Q285,220 305,205 Q285,210 255,225" fill="#22c55e" />
+
+  <!-- Left Lily Flower Blossom -->
+  <g transform="translate(160, 90)">
+    <!-- Petals -->
+    <path d="M60,70 Q30,10 50,0 Q70,40 60,70" fill="url(#petal-grad)" stroke="#fbcfe8" stroke-width="1.5" />
+    <path d="M60,70 Q10,40 0,60 Q40,75 60,70" fill="url(#petal-grad)" stroke="#fbcfe8" stroke-width="1.5" />
+    <path d="M60,70 Q40,110 65,115 Q75,85 60,70" fill="url(#petal-grad)" stroke="#fbcfe8" stroke-width="1.5" />
+    <path d="M60,70 Q100,50 115,70 Q80,85 60,70" fill="url(#petal-grad)" stroke="#fbcfe8" stroke-width="1.5" />
+    <path d="M60,70 Q80,15 100,10 Q85,45 60,70" fill="url(#petal-grad)" stroke="#fbcfe8" stroke-width="1.5" />
+    <!-- Stamens / Pistil -->
+    <line x1="60" y1="70" x2="52" y2="35" stroke="#fef08a" stroke-width="2" />
+    <circle cx="52" cy="35" r="3" fill="#ca8a04" />
+    <line x1="60" y1="70" x2="68" y2="38" stroke="#fef08a" stroke-width="2" />
+    <circle cx="68" cy="38" r="3" fill="#ca8a04" />
+  </g>
+
+  <!-- Right Lily Flower Blossom -->
+  <g transform="translate(235, 100)">
+    <path d="M50,65 Q30,10 45,0 Q65,35 50,65" fill="url(#petal-grad)" stroke="#fbcfe8" stroke-width="1.5" />
+    <path d="M50,65 Q5,35 0,55 Q35,70 50,65" fill="url(#petal-grad)" stroke="#fbcfe8" stroke-width="1.5" />
+    <path d="M50,65 Q35,100 55,105 Q65,80 50,65" fill="url(#petal-grad)" stroke="#fbcfe8" stroke-width="1.5" />
+    <path d="M50,65 Q85,45 100,65 Q70,75 50,65" fill="url(#petal-grad)" stroke="#fbcfe8" stroke-width="1.5" />
+    <!-- Stamens -->
+    <line x1="50" y1="65" x2="42" y2="32" stroke="#fef08a" stroke-width="2" />
+    <circle cx="42" cy="32" r="2.5" fill="#ca8a04" />
+  </g>
+
+  <!-- Craft Ribbon Tie -->
+  <path d="M250,290 C235,280 220,300 240,305 C250,307 265,307 275,305 C295,300 280,280 265,290 Z" fill="#fde047" />
+
+  <!-- Title & Text -->
+  <text x="250" y="340" font-family="'Segoe UI', sans-serif" font-size="22" fill="#ffffff" font-weight="bold" text-anchor="middle">Handmade Lilies &bull; Crafted To Last &#x1F338;&#x2728;</text>
+  <text x="250" y="370" font-family="'Segoe UI', sans-serif" font-size="13.5" fill="#fce7f3" text-anchor="middle">"Because real lilies fade, but handmade lilies bloom forever."</text>
+</svg>
