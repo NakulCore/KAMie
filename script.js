@@ -473,7 +473,7 @@ function flipCard(cardEl) {
    7. FLOATING HEARTS & CELEBRATION EFFECTS
    =================================================================== */
 
-const HEART_ICONS = ['❤️', '💙', '✨', '💫', '🍷', '🤍', '⭐', '🥰', '💖'];
+const HEART_ICONS = ['💖', '💕', '✨', '🌸', '💗', '🥰', '💝', '⭐'];
 
 function createHeartParticle(x, y) {
   const heart = document.createElement('div');
@@ -485,10 +485,10 @@ function createHeartParticle(x, y) {
   heart.style.left = `${x}px`;
   heart.style.top = `${y}px`;
   const glowList = [
-    'rgba(106, 46, 53, 0.65)',   /* Wine Plum */
-    'rgba(27, 152, 224, 0.7)',    /* Blue Bell */
-    'rgba(36, 123, 160, 0.65)',   /* Cerulean */
-    'rgba(217, 140, 110, 0.7)'    /* Warm Linen */
+    'rgba(244, 114, 182, 0.75)',  /* Primary Pink */
+    'rgba(251, 113, 133, 0.75)',  /* Rose */
+    'rgba(192, 132, 252, 0.75)',  /* Purple */
+    'rgba(253, 224, 71, 0.75)'    /* Gold */
   ];
   heart.style.filter = `drop-shadow(0 4px 12px ${glowList[Math.floor(Math.random() * glowList.length)]})`;
 
@@ -574,10 +574,10 @@ class SparkleParticle {
     this.alphaSpeed = (Math.random() * 0.02 + 0.005) * (Math.random() > 0.5 ? 1 : -1);
     this.speedY = Math.random() * -0.4 - 0.1;
     const glowColors = [
-      'rgba(106, 46, 53, 0.65)',   /* Wine Plum */
-      'rgba(27, 152, 224, 0.75)',  /* Blue Bell */
-      'rgba(36, 123, 160, 0.7)',    /* Cerulean */
-      'rgba(217, 140, 110, 0.75)'   /* Warm Linen */
+      'rgba(244, 114, 182, 0.85)', /* Primary Pink */
+      'rgba(192, 132, 252, 0.85)', /* Accent Purple */
+      'rgba(129, 140, 248, 0.85)', /* Accent Indigo */
+      'rgba(253, 224, 71, 0.85)'   /* Accent Gold */
     ];
     this.glowColor = glowColors[Math.floor(Math.random() * glowColors.length)];
   }
@@ -600,7 +600,7 @@ class SparkleParticle {
     if (!ctx) return;
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-    ctx.fillStyle = this.glowColor;
+    ctx.fillStyle = `rgba(255, 255, 255, ${this.alpha})`;
     ctx.shadowBlur = 8;
     ctx.shadowColor = this.glowColor;
     ctx.fill();

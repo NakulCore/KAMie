@@ -4,20 +4,6 @@ A minimal, romantic, and interactive personal website crafted with modern glassm
 
 ---
 
-## 🎨 Romantic Light-Primary Color Palette
-
-The design is built around an ethereal, luminous light-primary palette tailored for romantic intimacy and high-contrast elegance:
-
-| Color | Hex | Swatch | Role & Usage |
-| :--- | :--- | :---: | :--- |
-| **Warm Linen Silk** | `#FFEDE1` | 🪶 | Primary light background gradient & wax seal emboss |
-| **Wine Plum** | `#6A2E35` | 🍷 | Deep contrast anchor, titles, wax seal, quotes & celebration button |
-| **Pacific Cerulean** | `#247BA0` | 🌊 | Oceanic metadata tags, subtitle accents & timer units |
-| **Blue Bell / Sky Azure** | `#1B98E0` | 🩵 | Interactive focus, progress bar highlights & particle glows |
-| **Alice Blue / Frosted Ice** | `#E8F1F2` | ❄️ | Frosted porcelain card surfaces & ambient glow orbs |
-
----
-
 ## 🌟 Memorable Moments & Features Included
 
 1. **Dedicated Music Player (Slide 1)**:
