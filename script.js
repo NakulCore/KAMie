@@ -299,6 +299,8 @@ function prevTune() {
 // Event Listeners for Music
 if (playPauseBtn) playPauseBtn.addEventListener('click', toggleMusic);
 if (miniPlayBtn) miniPlayBtn.addEventListener('click', toggleMusic);
+if (miniDisc) miniDisc.addEventListener('click', toggleMusic);
+if (mainVinyl) mainVinyl.addEventListener('click', toggleMusic);
 if (volumeToggleBtn) volumeToggleBtn.addEventListener('click', toggleVolume);
 
 const nextTuneBtn = document.getElementById('next-tune-btn');
@@ -421,16 +423,40 @@ function toggleLoveLetter() {
   const envelope = document.getElementById('love-envelope');
   const letterCard = document.getElementById('letter-card');
   const waxSeal = document.getElementById('wax-seal');
+  const promptText = document.getElementById('seal-prompt-text');
 
   if (letterCard.classList.contains('open')) {
     letterCard.classList.remove('open');
-    if (waxSeal) waxSeal.innerHTML = '<i class="fa-solid fa-heart"></i><span class="seal-tooltip">Click to open 💌</span>';
+    if (envelope) {
+      envelope.classList.remove('open');
+      envelope.setAttribute('aria-expanded', 'false');
+    }
+    if (waxSeal) {
+      waxSeal.innerHTML = '<div class="wax-seal-emboss"><i class="fa-solid fa-heart"></i></div>';
+    }
+    if (promptText) {
+      promptText.textContent = 'Click seal to open 💌';
+    }
   } else {
     letterCard.classList.add('open');
-    if (waxSeal) waxSeal.innerHTML = '<i class="fa-solid fa-envelope-open"></i><span class="seal-tooltip">Letter Unfolded ✨</span>';
+    if (envelope) {
+      envelope.classList.add('open');
+      envelope.setAttribute('aria-expanded', 'true');
+    }
+    if (waxSeal) {
+      waxSeal.innerHTML = '<div class="wax-seal-emboss"><i class="fa-solid fa-envelope-open"></i></div>';
+    }
+    if (promptText) {
+      promptText.textContent = 'Letter Unfolded ✨';
+    }
 
     // Spawn cheerful celebration hearts
-    spawnHeartsAroundElement(envelope, 12);
+    spawnHeartsAroundElement(envelope, 14);
+
+    // Smoothly scroll letter into view if needed
+    setTimeout(() => {
+      letterCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 200);
   }
 }
 
@@ -447,7 +473,7 @@ function flipCard(cardEl) {
    7. FLOATING HEARTS & CELEBRATION EFFECTS
    =================================================================== */
 
-const HEART_ICONS = ['💖', '💕', '✨', '🌸', '💗', '🥰', '💝', '⭐'];
+const HEART_ICONS = ['❤️', '💙', '✨', '💫', '🍷', '🤍', '⭐', '🥰', '💖'];
 
 function createHeartParticle(x, y) {
   const heart = document.createElement('div');
@@ -458,6 +484,13 @@ function createHeartParticle(x, y) {
   heart.style.fontSize = `${size}px`;
   heart.style.left = `${x}px`;
   heart.style.top = `${y}px`;
+  const glowList = [
+    'rgba(106, 46, 53, 0.65)',   /* Wine Plum */
+    'rgba(27, 152, 224, 0.7)',    /* Blue Bell */
+    'rgba(36, 123, 160, 0.65)',   /* Cerulean */
+    'rgba(217, 140, 110, 0.7)'    /* Warm Linen */
+  ];
+  heart.style.filter = `drop-shadow(0 4px 12px ${glowList[Math.floor(Math.random() * glowList.length)]})`;
 
   document.body.appendChild(heart);
 
@@ -536,10 +569,17 @@ class SparkleParticle {
   reset() {
     this.x = Math.random() * (canvas ? canvas.width : window.innerWidth);
     this.y = Math.random() * (canvas ? canvas.height : window.innerHeight);
-    this.size = Math.random() * 2 + 0.5;
+    this.size = Math.random() * 2.2 + 0.5;
     this.alpha = Math.random() * 0.8 + 0.2;
     this.alphaSpeed = (Math.random() * 0.02 + 0.005) * (Math.random() > 0.5 ? 1 : -1);
     this.speedY = Math.random() * -0.4 - 0.1;
+    const glowColors = [
+      'rgba(106, 46, 53, 0.65)',   /* Wine Plum */
+      'rgba(27, 152, 224, 0.75)',  /* Blue Bell */
+      'rgba(36, 123, 160, 0.7)',    /* Cerulean */
+      'rgba(217, 140, 110, 0.75)'   /* Warm Linen */
+    ];
+    this.glowColor = glowColors[Math.floor(Math.random() * glowColors.length)];
   }
 
   update() {
@@ -560,9 +600,9 @@ class SparkleParticle {
     if (!ctx) return;
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(255, 255, 255, ${this.alpha})`;
+    ctx.fillStyle = this.glowColor;
     ctx.shadowBlur = 8;
-    ctx.shadowColor = 'rgba(244, 114, 182, 0.7)';
+    ctx.shadowColor = this.glowColor;
     ctx.fill();
     ctx.shadowBlur = 0;
   }
